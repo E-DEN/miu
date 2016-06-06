@@ -26,7 +26,7 @@ module.exports = (robot) ->
       msg.send "LGTM!!\n#{src}"
 
   # Create Issue
-  robot.hear /issue ([^\s]+)\s?([^\s]+)?/i, (msg) ->
+  robot.hear /^issue ([^\s]+)\s?([^\s]+)?/i, (msg) ->
     title = msg.match[1]
     body = msg.match[2]
     token = process.env.HUBOT_GITHUB_TOKEN
