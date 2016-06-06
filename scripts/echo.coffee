@@ -25,6 +25,14 @@ module.exports = (robot) ->
       src = $('.thumbnail img').attr 'src'
       msg.send "LGTM!!\n#{src}"
 
+  # うんち
+  robot.hear /といれ|トイレ|おしっこ|うんち|うんこ/i, (msg) ->
+    say = random [
+      ':shit:'
+      'うんち出た!? :taba:'
+    ]
+    msg.send "#{say}"
+
   # Create Issue
   robot.hear /^issue ([^\s]+)\s?([^\s]+)?/i, (msg) ->
     title = msg.match[1]
