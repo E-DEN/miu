@@ -12,7 +12,7 @@ module.exports = (robot) ->
         '今日は何すんの?'
         '今日もゲーム?'
       ]
-      robot.send user, "#{say}"
+      robot.send '#channele01', "#{say}"
       return
     start: true
     timeZone: "Asia/Tokyo"
@@ -25,7 +25,7 @@ module.exports = (robot) ->
         'お疲れ'
         '君達も早く寝なさい'
       ]
-      robot.send user, "#{say}"
+      robot.send '#channele01', "#{say}"
       return
     start: true
     timeZone: "Asia/Tokyo"
@@ -37,7 +37,7 @@ module.exports = (robot) ->
         ' あれ、まだ誰も帰ってない?'
         ' 今日も一日頑張るか!'
       ]
-      robot.send user, "#{say}"
+      robot.send '#channele01', "#{say}"
       return
     start: true
     timeZone: "Asia/Tokyo"
@@ -49,7 +49,7 @@ module.exports = (robot) ->
         '行って来まーす'
         '行って来る!!'
       ]
-      robot.send user, "#{say}"
+      robot.send '#channele01', "#{say}"
       return
     start: true
     timeZone: "Asia/Tokyo"
