@@ -15,7 +15,7 @@ module.exports = (robot) ->
       'なんじゃ'
       '今美少女呼んだ?'
     ]
-    msg.send "#{say}"
+    msg.reply "#{say}"
 
   robot.hear /lgtm/i, (msg) ->
     url = 'http://www.lgtm.in/g/'
@@ -53,8 +53,5 @@ module.exports = (robot) ->
 
   # channel
   robot.hear /^channel\?/i, (msg) ->
-    room   = msg.params.room
-    data   = JSON.parse msg.body.payload
-    secret = data.secret
-
-    robot.messageRoom room, "room = #{room}"
+    robot.messageRoom 'channel01', "channel01"
+    robot.messageRoom '#channel01', "#channele01"
