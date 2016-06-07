@@ -50,3 +50,11 @@ module.exports = (robot) ->
         ret = JSON.parse json
         say = "来世に期待しとけ。\n#{title}\n#{ret.html_url}"
         msg.send "#{say}"
+
+  # channel
+  robot.hear /^channel\?/i, (msg) ->
+    room   = msg.params.room
+    data   = JSON.parse msg.body.payload
+    secret = data.secret
+
+    robot.messageRoom room, "room = #{room}"
