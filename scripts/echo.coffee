@@ -53,5 +53,8 @@ module.exports = (robot) ->
 
   # channel
   robot.hear /^channel\?/i, (msg) ->
-    robot.messageRoom 'channel01', "channel01"
-    robot.messageRoom '#channel01', "#channele01"
+    robot.messageRoom 'channel02', "channel02"
+    robot.messageRoom '#channel02', "#channele02"
+    robot.messageRoom '188944383809290241', "188944383809290241"
+    robot.messageRoom '189334038824091649', "189334038824091649"
+    robot.messageRoom '188944383809290241/189334038824091649', "188944383809290241/189334038824091649"
