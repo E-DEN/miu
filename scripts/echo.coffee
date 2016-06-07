@@ -41,6 +41,7 @@ module.exports = (robot) ->
     query = JSON.stringify({
       'title': title
       'body': body
+      'assignee': 'shyazusa'
       'labels': ['other']
     })
     url = "https://api.github.com/repos/shyazusa/miu/issues?access_token=#{token}"
